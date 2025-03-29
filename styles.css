@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: "poppins",serif;
+ }
+body{
+background-color: #222831;
+    }
+
+
+
+header {
+      display: flex;      
+      justify-content: space-between;
+      margin: 2rem auto;
+      max-width: 1200px;
+      
+      }    
+
+.navigation ul{
+      display: flex;
+      list-style-type: none;
+      gap: 2rem;
+    
+              }
+
+.navigation a{
+  text-decoration: none;
+  color: bisque;
+
+}              
+
+
+.navigation a:hover{
+    color: #00adb5;
+  
+  }              
+  
+hr{
+    opacity: 30%;
+
+}
+  
+
+
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+.arrow {
+    margin-left: 1rem; /* المسافة بين السهم والنص */
+    font-size: 2rem; /* حجم السهم */
+}
+
+.herosub {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* تأكد من كتابة الفاصلة بشكل صحيح */
+}
+
+.name {
+    font-size: 4rem;
+    color: beige;
+}
+
+.title {
+    font-size: 5rem;
+    color: aquamarine;
+}
+
+.title a {
+    display: block; /* يجعل الرابط يظهر تحت النص */
+    margin-top: 0.5rem; /* مسافة بين العنوان والرابط */
+    text-align: center; /* محاذاة الرابط في المنتصف */
+    color: cadetblue; /* لون الرابط */
+    text-decoration: none; /* لإزالة التسطير عن الرابط */
+}
+
+.title a:hover {
+    text-decoration: underline; /* لتسليط الضوء على الرابط عند التمرير عليه */
+}
+.herobtns{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.hirme {
+ background-color: #00adb5;
+ color: aliceblue;
+ border-radius: 24px;
+ text-decoration: none;
+ padding: 0.5rem 1.5rem;
+ text-decoration: 0px 4px 4px black (0 , 0 , 0 , 5.0);
+ font-size: 2rem;
+ height: 100;
+ width: 100;
+}
+
+
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto; 
+  max-width: 1200px;
+  gap: 10rem;
+  color: #00adb5;
+}
+
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.texttitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 2rem;
+}
+.aboutMepar {
+  text-align: justify;
+  color: aliceblue;
+}
+.aboutMed {
+  color: aliceblue;
+}
+.aboutTitle {
+  color: #00adb5;
+}
+.work {
+  background-image: url(assets/svg/background.svg);
+  padding: 10rem 10rem ;
+  margin: 5rem 0rem ;
+}
+.workcuntinar {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: left;
+ margin: 5rem auto;
+ max-width: 1200px;
+}
+.projectTitle{
+ display: flex;
+ align-items: center;
+ justify-content: left;
+ gap: 5px;
+ font-size: 2rem;
+}
+.work ul {
+ display: flex;
+ list-style-type: none;
+ align-items: center;
+ justify-content: space-between; 
+}
+.work li{
+  border-radius: 16px;
+  background-color: #222831;
+  backdrop-filter: blur(4px);
+  padding: 1rem 4rem;
+}
+.work li img{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+.work li :hover{
+  transform: scale(1.5);
+}
+.bb li {
+  border-radius: 16px;
+  background-color: aliceblue;
+  backdrop-filter: blur(4px);
+  padding: 1rem 4rem;
+}
+.bb li img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.2s;
+} 
+.bb li :hover {
+  transform: scale(1.5);
+}
+.bb ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  font-size: 2rem;
+}
+.conecttitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.conact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+  gap: 20rem;
+}
+
+.conact h3, .conact a{
+  color: beige;
+  text-decoration: none;
+}
+.emailAndPhone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: beige;
+  text-decoration: none; 
+  font-size: 2rem; 
+}
+footer{
+  color: beige;
+  padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .heroImg {
+    width: 400px;
+  }
+  .name,
+  .title {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 5rem;
+    gap: 1rem;
+  }
+  .aboutMed,
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  .light {
+    width: 60px;
+  }
+  .aboutMeImg {
+    width: 400px;
+  }
+  .works {
+    padding: 0;
+  }
+  .worksContainer {
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+  .projectTitle {
+    margin-left: 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
